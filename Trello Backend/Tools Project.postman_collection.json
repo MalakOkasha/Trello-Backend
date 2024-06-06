@@ -1,0 +1,562 @@
+{
+	"info": {
+		"_postman_id": "a1b1605e-791a-466d-bbeb-f9b1380d957c",
+		"name": "Tools Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31536013"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Malak\",\r\n    \"email\":\"Malak@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Malak@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateByEmail",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newUserEmail\":\"malak.Okasha@gmail.com\",\r\n    \"oldUserEmail\":\"Malak@gmail.com\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/user/updateByEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"user",
+						"updateByEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateByUserName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newUserName\":\"Malak Okasha\",\r\n    \"oldUserName\":\"Malak\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/user/updateByUserName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"user",
+						"updateByUserName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateByPassword",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userEmail\":\"malak.Okasha@gmail.com\",\r\n    \"newPassword\":\"123456\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/user/updateByPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"user",
+						"updateByPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBoard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Tools2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/board/createBoard/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"board",
+						"createBoard",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBoards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/board/getBoards/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"board",
+						"getBoards",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all boards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/board/getAllBoards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"board",
+						"getAllBoards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBoard",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/board/Tool/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"board",
+						"Tool",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invite to board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/board/invite/2/Tools2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"board",
+						"invite",
+						"2",
+						"Tools2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accept Invitation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/board/invitations/2/Tools/Accept",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"board",
+						"invitations",
+						"2",
+						"Tools",
+						"Accept"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\":\"done\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/list/createList/Tools",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"list",
+						"createList",
+						"Tools"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete List",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/list/deleteList/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"list",
+						"deleteList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sample\",\r\n    \"description\":\"yyyy\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/card/createnewcard?listId=1&userId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"card",
+						"createnewcard"
+					],
+					"query": [
+						{
+							"key": "listId",
+							"value": "1"
+						},
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Description",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/card/1/addDescription?description=sampleDesc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"card",
+						"1",
+						"addDescription"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "sampleDesc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add comment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/card/1/addComment/anyComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"card",
+						"1",
+						"addComment",
+						"anyComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/card/1/assigncardToUser/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"card",
+						"1",
+						"assigncardToUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Move card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/card/1/moveCardToAnotherList/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"card",
+						"1",
+						"moveCardToAnotherList",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update desc",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Trello/api/card/1/updateDescription?description=thisisthedescription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Trello",
+						"api",
+						"card",
+						"1",
+						"updateDescription"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "thisisthedescription"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
